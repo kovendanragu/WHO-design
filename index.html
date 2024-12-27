@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Design</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="header">
+        <div class="left-section">
+            <button class="menu-icon" title="Show sidebar">
+                <img src="image/IMG-20241227-WA0016.jpg" width=20 height=20 alt="home logo">
+            </button>
+            <img src="image/WHO logo.jpg" width=130 height=40 alt="WHO Logo" class="logo">
+            <h1 class="title">Event Information Site for IHR National Focal Points</h1>
+            <img src="image/IMG-20241227-WA0014.jpg" width=20 height=20 alt="" class="logo">
+            <img src="image/IMG-20241227-WA0020.jpg" width=15 height=15 alt="" class="bottlelogo">
+        </div>
+        <div class="right-section">
+            <div class="user-info">
+                <div class="user-name">Kovendan Raguraman</div>
+                <div class="user-email">Kovendan.r@adappt.ai</div>
+                <div class="user-icon">
+                    <img src="image/IMG-20241227-WA0013.jpg" width=20 height=20 alt="">
+                </div>
+                <div class="notification-icon">
+                    <img src="image/IMG-20241227-WA0018.jpg" width=20 height=20 alt="">
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="filter-bar">
+        <div class="filter-item">
+            <label for="who-region">WHO Region</label>
+            <select id="who-region">
+                <option>Select WHO Regions</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <label for="country">Country</label>
+            <select id="country">
+                <option>Select Countries, Territories</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <label for="disease">Disease</label>
+            <select id="disease">
+                <option>No Filter Selected</option>
+            </select>
+        </div>
+        <div class="filter-item">
+            <label for="date-from">Date From</label>
+            <input type="date" id="date-from">
+        </div>
+        <div class="filter-item">
+            <label for="date-to">Date To</label>
+            <input type="date" id="date-to">
+        </div>
+    </div>
+
+</body>
+
+</html>
