@@ -1,10 +1,4 @@
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-} */
-
 body {
     font-family: Arial, sans-serif;
     background-color: #f8f9fa;
@@ -78,24 +72,17 @@ body {
     padding: 8px;
 }
 
-/* .user-icons i {
-    font-size: 18px;
-    margin-left: 8px;
-    color: #003366; 
-} */
-
-
-
 .filter-bar {
     display: flex;
     align-items: center;
-    gap: 2rem;
     padding: 20px;
     border-top: 2px solid black;
     border-bottom: 1px solid rgb(184, 183, 183);
     justify-content: space-around;
     font-weight: lighter;
 }
+
+
 
 .filter-item {
     display: flex;
@@ -255,5 +242,300 @@ select, input[type="date"] {
     background-color:#c5e3ee;
     border-radius: 4px;
     font-size: 14px;
+  }  
+
+  @media (max-width:1295px ){
+    .filter-bar{
+        flex-wrap: wrap;
+    }
   }
-  
+
+  @media (max-width: 768px) {
+    /* General Body Padding Adjustment */
+    body {
+        padding: 10px;
+    }
+
+    /* Header Section */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .left-section, .user-profile {
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .title {
+        font-size: 14px;
+    }
+
+    .menu-icon {
+        font-size: 18px;
+    }
+
+    .user-details {
+        text-align: left;
+    }
+
+    .user-name {
+        font-size: 13px;
+    }
+
+    .user-email {
+        font-size: 11px;
+    }
+
+    /* Filter Bar Section */
+    .filter-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 15px;
+    }
+
+    .filter-item {
+        flex-direction: column; 
+        align-items: flex-start;
+        gap: 5px;
+    }
+
+    select, input[type="date"] {
+        width: 100%;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    /* Home Section */
+    .current {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    /* Main Content */
+    .parent-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container-aside {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container-main {
+        width: 100%;
+    }
+
+    .container-highlighted {
+        margin: 10px 0px;
+    }
+
+    .highlighted-info {
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .event {
+        flex-direction: row;
+        align-items: center;
+        gap: 5px;
+        padding: 10px;
+    }
+
+    .region, .event-type, .america {
+        font-size: 12px;
+    }
+
+    /* Hazard Section */
+    .hazard-summary {
+        padding: 10px;
+        margin: 10px 0px;
+    }
+
+    .hazard-container {
+        grid-template-columns: 1fr 1fr; /* Adjust to two columns */
+        grid-template-rows: auto;
+        gap: 10px;
+    }
+
+    .hazard {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .hazard-text {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .public, .total {
+        font-size: 12px;
+    }
+}
+
+@media (max-width:645px){
+    .left-section{
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 480px) {
+    /* General Body Padding Adjustment */
+    body {
+        padding: 5px;
+    }
+
+    /* Header Section */
+    .header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+    }
+
+    .left-section{
+        flex-wrap: wrap;
+    }
+
+    .left-section, .user-profile {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .title {
+        font-size: 12px;
+    }
+
+    .menu-icon {
+        font-size: 16px;
+    }
+
+    .user-profile {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .user-details {
+        text-align: left;
+    }
+
+    .user-name {
+        font-size: 12px;
+    }
+
+    .user-email {
+        font-size: 10px;
+    }
+
+    .icon-notification {
+        padding: 5px;
+    }
+
+    /* Filter Bar Section */
+    .filter-bar {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 10px;
+        padding: 10px;
+    }
+
+    .filter-item {
+        flex-direction: column;
+        align-items: flex-start;
+        width: 100%;
+    }
+
+    select, input[type="date"] {
+        width: 100%;
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    label {
+        font-size: 12px;
+    }
+
+    /* Home Section */
+    .home-container {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 5px;
+    }
+
+    .current {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    /* Main Content */
+    .parent-container {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .container-aside {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .container-main {
+        width: 100%;
+    }
+
+    .container-highlighted {
+        margin: 10px 0px;
+    }
+
+    .highlighted-info {
+        font-size: 12px;
+        padding: 8px;
+    }
+
+    .event {
+        flex-direction: row;
+        align-items: flex-start;
+        gap: 5px;
+        padding: 5px;
+    }
+
+    .region, .event-type, .america .event-date{
+        font-size: 10px;
+    }
+
+    /* Hazard Section */
+    .hazard-summary {
+        flex-direction: row;
+        padding: 8px;
+        margin: 10px 0px;
+    }
+
+    .hazard-container {
+        grid-template-columns: 1fr; /* Single column */
+        gap: 10px;
+    }
+
+    .hazard {
+        font-size: 12px;
+        padding: 6px;
+    }
+
+    .hazard-text {
+        font-size: 12px;
+        text-align: center;
+    }
+
+    .public, .total {
+        font-size: 10px;
+    }
+
+    /* Buttons and Icons */
+    .menu-icon, .download-icon {
+        font-size: 14px;
+    }
+}
